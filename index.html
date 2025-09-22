@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
+  <meta name="keywords" content="Model Fusion">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Visual Fourier Prompt Tuning</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.ico">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="http://runjia.tech">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Probabilistic Token Alignment for Large Language Model Fusion</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://runjia.tech">Runjia Zeng</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              James Chenhao Liang<sup>2</sup>,
+            </span>
+            <span class="author-block">
+              Cheng Han<sup>3</sup>,
+            </span>
+            <span class="author-block">
+              Zhiwen Cao<sup>4</sup>,
+            </span>
+            <span class="author-block">
+              Jiahao Liu<sup>5</sup>,
+            </span>
+            <span class="author-block">
+              Xiaojun Quan<sup>6</sup>,
+            </span>
+            <span class="author-block">
+              Yingjie Victor Chen<sup>7</sup>,
+            </span>
+            <span class="author-block">
+              Lifu Huang<sup>8</sup>,
+            </span>
+            <span class="author-block">
+              Tong Geng<sup>9,10</sup>,
+            </span>
+            <span class="author-block">
+              Qifan Wang<sup>11</sup>,
+            </span>
+            <span class="author-block">
+              Dongfang Liu<sup>1†</sup>
+            </span><br><br>
+          </div>
+          <p>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Rochester Institute of Technology,</span>
+            <span class="author-block"><sup>2</sup>U.S. Naval Research Laboratory,</span><br>
+            <span class="author-block"><sup>3</sup>University of Missouri-Kansas City,</span>
+            <span class="author-block"><sup>4</sup>Adobe,</span>
+            <span class="author-block"><sup>5</sup>Meituan,</span><br>
+            <span class="author-block"><sup>6</sup>Sun Yat-sen University,</span>
+            <span class="author-block"><sup>7</sup>Purdue University,</span>
+            <span class="author-block"><sup>8</sup>UC Davis,</span><br>
+            <span class="author-block"><sup>9</sup>University of Rochester,</span>
+            <span class="author-block"><sup>10</sup>Rice University,</span>
+            <span class="author-block"><sup>11</sup>Meta AI,</span><br>
+            <span class="author-block"><sup>†</sup>Corresponding author</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/2509.00996"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2509.00996"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <!-- <span class="link-block">
+                <a href="https://recorder-v3.slideslive.com/?share=96649&s=ddeb9230-5258-4ce1-bcad-092710eb580f"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span> -->
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/runtsang/PTA-LLM"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+                  <!-- <span class="link-block">
+                    <a href="./static/images/VFPT.pptx"
+                       class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                          <i class="fas fa-file-powerpoint"></i>
+                      </span>
+                      <span>Slides</span>
+                    </a> -->
+                  </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+       <!-- <img src="./static/images/title.png"
+                   class="image is-fullwidth"
+                   alt="Interpolate start reference image."/> -->
+        <img src="./static/images/overview.jpg"
+                 class="interpolation-image"
+                 alt="Interpolate start reference image."/>
+      <h2 class="subtitle has-text-centered">
+        Probabilistic Token Alignment for Large Language Model Fusion.
+      </h2>
+    </div>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Training large language models (LLMs) from scratch can yield models with unique functionalities and strengths, but it is costly and often leads to redundant capabilities. A more cost-effective alternative is to fuse existing pre-trained LLMs with different architectures into a more powerful model. However, a key challenge in existing model fusion is their dependence on manually predefined vocabulary alignment, which may not generalize well across diverse contexts, leading to performance degradation in several evaluation.
+          </p>
+          <p>
+            To solve this, we draw inspiration from distribution learning and propose the probabilistic token alignment method as a general and soft mapping for alignment, named as PTA-LLM. Our approach innovatively reformulates token alignment into a classic mathematical problem: optimal transport, seamlessly leveraging distribution-aware learning to facilitate more coherent model fusion. Apart from its inherent generality, PTA-LLM exhibits interpretability from a distributional perspective, offering insights into the essence of the token alignment. Empirical results demonstrate that probabilistic token alignment enhances the target model's performance across multiple capabilities.
+          </p>
+          <p>
+            P.S. The video and slides are on the way!!
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <!-- <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe src="https://recorder-v3.slideslive.com/?share=96649&s=ddeb9230-5258-4ce1-bcad-092710eb580f"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div> -->
+    
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <img src="./static/images/ptallm.jpg"
+                   class="image is-fullwidth"
+                   alt="Interpolate start reference image."/>
+        <!-- <img src="./static/images/1.png"
+                   class="image is-fullwidth"
+                   alt="Interpolate start reference image."/>
+        <img src="./static/images/2.png"
+                   class="image is-fullwidth"
+                   alt="Interpolate start reference image."/>
+        <img src="./static/images/3.png"
+                   class="image is-fullwidth"
+                   alt="Interpolate start reference image."/>      
+        <img src="./static/images/4.png"
+                   class="image is-fullwidth"
+                   alt="Interpolate start reference image."/>
+        <img src="./static/images/5.png"
+                   class="image is-fullwidth"
+                   alt="Interpolate start reference image."/>
+                    -->
+      </div>
+    </div>
+
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    If you find our work useful, please consider citing our paper: <br><br>
+
+    <pre><code>@inproceedings{zeng2025probabilistic,
+  title={Probabilistic Token Alignment for Large Language Model Fusion},
+  author={Zeng, Runjia and Liang, James Chenhao and Han, Cheng and Cao, Zhiwen and Liu, Jiahao and Quan, Xiaojun and Chen, Yingjie Victor and Huang, Lifu and Geng, Tong and Wang, Qifan and Liu, Dongfang},
+  booktitle={NeurIPS},
+  year={2025}
+}
+</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link" href="https://github.com/runtsang" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is constructed using the templet provided by <a
+            href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>. Thanks for their effort. 
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
